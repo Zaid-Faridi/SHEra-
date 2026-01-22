@@ -65,16 +65,44 @@ SHERa follows a **Modular, Component-Based Architecture** built on the **Expo Ro
 
 ## 📂 Project Structure
 
-```text
-├── app/                  # Main application routes (Expo Router)
-│   ├── (tabs)/           # Main navigation tabs
-│   ├── (onboarding)/     # diagnostic flow routes
-│   └── _layout.tsx       # Root navigation stack
-├── components/           # Reusable UI components (Calendar, Charts, etc.)
-├── constants/            # Design tokens, Colors, and Config
-├── assets/               # Local images, fonts, and icons
-├── brain/                # (System) Project intelligence and documentation
-└── README.md             # You are here!
+```
+SHEra/
+├── app/                          # Main app screens and routing
+│   ├── _layout.tsx              # Root layout configuration
+│   ├── index.tsx                # Home screen
+│   ├── ai-chat.tsx              # AI chat interface
+│   ├── breathing.tsx            # Breathing exercises
+│   ├── doctors.tsx              # Doctors directory
+│   ├── nutrition.tsx            # Nutrition tracker
+│   ├── yoga-poses.tsx           # Yoga poses guide
+│   ├── log.tsx                  # Health logging
+│   ├── (onboarding)/            # Onboarding flow
+│   │   ├── index.tsx            # Onboarding welcome
+│   │   ├── questions.tsx        # Health questions
+│   │   └── summary.tsx          # Risk summary
+│   └── (tabs)/                  # Bottom tab navigation
+│       ├── ai-bot.tsx           # AI chatbot tab
+│       ├── community.tsx        # Community tab
+│       ├── insights.tsx         # Health insights tab
+│       ├── profile.tsx          # User profile tab
+│       └── wellness.tsx         # Wellness recommendations tab
+├── components/                  # Reusable components
+│   ├── CycleCalendar.tsx       # Menstrual cycle calendar
+│   ├── Themed.tsx              # Theme-aware components
+│   ├── StyledText.tsx          # Styled text components
+│   └── useColorScheme.ts       # Color scheme hook
+├── constants/                   # App constants
+│   ├── Colors.ts               # Color palette
+│   ├── Config.ts               # API configuration
+│   └── Onboarding.ts           # Onboarding data
+├── utils/                       # Utility functions
+│   └── RiskCalculator.ts       # Health risk assessment
+├── assets/                      # Images and fonts
+│   ├── fonts/                  # Custom fonts
+│   └── images/                 # App images
+├── package.json                # Dependencies
+├── tsconfig.json               # TypeScript configuration
+└── app.json                    # Expo configuration
 ```
 
 ---
